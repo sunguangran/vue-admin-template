@@ -60,7 +60,7 @@ export const constantRoutes = [
     component: Layout,
     redirect: '/user/users',
     name: 'user',
-    meta: { title: '用户管理', icon: 'example' },
+    meta: { title: '用户管理', icon: 'peoples' },
     children: [
       {
         path: 'users',
@@ -169,18 +169,6 @@ export const constantRoutes = [
         path: 'menu2',
         component: () => import('@/views/nested/menu2/index'),
         meta: { title: 'menu2' }
-      }
-    ]
-  },
-
-  {
-    path: 'external-link',
-    component: Layout,
-    hidden: true,
-    children: [
-      {
-        path: 'https://panjiachen.github.io/vue-element-admin-site/#/',
-        meta: { title: 'External Link', icon: 'link' }
       }
     ]
   },
